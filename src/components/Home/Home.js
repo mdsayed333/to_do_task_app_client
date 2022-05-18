@@ -1,5 +1,6 @@
 import React from "react";
 import AddTask from "./AddTask";
+import AllTask from "./AllTask";
 import HeaderNavbar from "./HeaderNavbar";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <HeaderNavbar></HeaderNavbar>
       <AddTask></AddTask>
+      {/* <AllTask></AllTask> */}
 
     </div>
   );
