@@ -9,23 +9,32 @@ const HeaderNavbar = () => {
   const [user] = useAuthState(auth);
   const handleLogout = () => {
     signOut(auth);
-  }
+  };
   return (
     <div>
       <Navbar collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand href="#home" className="text-primary fw-bold">ToDo Task</Navbar.Brand>
+          <Navbar.Brand href="#home" className="text-primary fw-bold">
+            ToDo Task
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/home">
                 Add Task
               </Nav.Link>
-              <Nav.Link as={Link} to="/alltask">All TAsk</Nav.Link>
+              <Nav.Link as={Link} to="/alltask">
+                All TAsk
+              </Nav.Link>
             </Nav>
             <Nav>
               {user ? (
-                <button onClick={handleLogout} className="btn btn-outline-primary">Logout</button>
+                <button
+                  onClick={handleLogout}
+                  className="btn btn-outline-primary"
+                >
+                  Logout
+                </button>
               ) : (
                 <Nav.Link
                   as={Link}

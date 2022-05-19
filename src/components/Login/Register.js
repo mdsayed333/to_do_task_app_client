@@ -11,16 +11,15 @@ const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-    useEffect( () => {
-        if (user) {
-            navigate("/");
-          }
-    },[user, navigate]);
+  useEffect(() => {
+    if (user) {
+      navigate("/");
+    }
+  }, [user, navigate]);
 
   if (loading) {
     return <Loading></Loading>;
   }
-  
 
   let registerErr;
   if (error) {
@@ -78,7 +77,10 @@ const Register = () => {
                 required
               />
             </Form.Group>
-            <button className="w-50 d-block mx-auto mb-2 btn btn-outline-primary" type="submit">
+            <button
+              className="w-50 d-block mx-auto mb-2 btn btn-outline-primary"
+              type="submit"
+            >
               Register
             </button>
             {registerErr}
@@ -90,7 +92,6 @@ const Register = () => {
             </Link>
           </p>
         </div>
-        <div className=" mx-auto">{/* <SocialLogin></SocialLogin> */}</div>
       </div>
     </div>
   );

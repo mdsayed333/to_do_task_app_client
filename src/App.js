@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/Home/Home";
 import { Route, Routes } from "react-router-dom";
@@ -6,8 +5,8 @@ import AddTask from "./components/Home/AddTask";
 import Login from "./components/Login/Login";
 import Register from "./components/Login/Register";
 import RequireAuth from "./components/RequireAuth";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import AllTask from "./components/Home/AllTask";
 
 function App() {

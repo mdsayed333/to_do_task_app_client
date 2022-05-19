@@ -4,13 +4,10 @@ import AllTask from "./AllTask";
 import HeaderNavbar from "./HeaderNavbar";
 
 const Home = () => {
-
   return (
     <div>
       <HeaderNavbar></HeaderNavbar>
       <AddTask></AddTask>
-      {/* <AllTask></AllTask> */}
-
     </div>
   );
 };

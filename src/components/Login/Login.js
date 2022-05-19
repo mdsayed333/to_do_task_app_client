@@ -15,15 +15,13 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-        navigate(from, { replace: true });
+      navigate(from, { replace: true });
     }
   }, [user, navigate, from]);
-
 
   if (loading) {
     return <Loading></Loading>;
   }
-
 
   let loginErr;
   if (error) {
@@ -83,7 +81,6 @@ const Login = () => {
             </p>
           </div>
         </div>
-
       </div>
     </div>
   );
